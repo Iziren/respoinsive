@@ -1,0 +1,397 @@
+
+<div class="page">
+  <!--Banner-->
+  <section class="banner full-width full-height">
+    <div fxLayout="column" fxLayoutAlign="center" class="full-height">
+      <div fxFlex="100" fxFlexAlign="center" class="max-h-max-content-nm center-align">
+        <h2 class="color-white">Tired of losing out on your precious time to traffic jams in <b>"Lagos"</b></h2>
+        <button id="getstarted" class="btn waves-effect waves-light btn-large" type="submit" name="action" (click)="scrollgetstarted()">
+          Get Started
+          <i class="material-icons right">send</i>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--Subscription-->
+  <div class="container">
+    <div class="content">
+      <div fxLayout="column">
+        <div fxFlex class="center-align">
+          <h4 id="subscribe">Subscribe To Our Yearly Packages</h4>
+        </div>
+        <div fxFlex>
+          <div fxLayout="row wrap" fxLayoutGap="30px" fxLayoutGap.lt-md="0" class="mt-5 mb-3">
+            <div fxFlex="calc(33% - 30px)" fxFlex.lt-md="100">
+              <div class="card mb-5">
+                <div class="card-content  indigo lighten-1  white-text">
+                  <div class="card-title text-center">
+                    <span class="d-inline custom-small-text">Move Like A </span>
+                    <span class="d-inline" ><b> BOSS</b></span>
+                  </div>
+                </div>
+                <div class="card-content text-center">
+                  <div fxLayout="column">
+                    <div fxFlex>
+                      <div class="custom-lt">
+                        <h5 class="black-text"><b>$2500</b></h5>
+                      </div>
+                    </div>
+                    <div fxFlex>
+                      <h4 class="mt-3 d-inline">
+                        <span class="blue-text text-darken-4">$ 1500</span>
+                      </h4>
+                      <h6 class="mt-3 d-inline">
+                        <span class="grey-text text-lighten-1">/Yr</span>
+                      </h6>
+                    </div>
+                    <div fxFlex class="my-4">
+                      <button style="background-color: #283593;color:white;border-radius:12px 0px;font-family:HelveticaNeue-Medium"  class="waves-effect btn"  type="submit" name="action" [routerLink]="['/payment']" [queryParams]="{ sub:1500 }">
+                        Sign up now
+                      </button>
+                    </div>
+                    <div fxFlex class="mt-2 text-left">
+                      <ul class="custom-subs-list">
+                        <li>Unique code to download App before launch</li>
+                        <li>Upto 10% discounts on all lifts</li>
+                        <li><b>Seat flexibility</b></li>
+                        <li class="grey-text">Upto 5% discounts on all chartered flights</li>
+                        <li class="grey-text">Upto 10% discount</li>
+                        <li class="grey-text">VIP pick-ups and drop-offs</li>
+                        <li class="grey-text">Upto 2 lift cruises a year</li>
+                        <li class="grey-text">Access to selected VetiFly events & partner deals</li>
+                        <li class="grey-text mt-4">2nd order preferential booking access during high-demand</li>
+                        <li class="grey-text">Dedicated relationship manager</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div fxFlex="calc(33% - 30px)" fxFlex.lt-md="100" class="mb-3">
+              <div class="card mb-5">
+                <div class="card-content indigo darken-1 white-text">
+                  <div class="card-title text-center">
+                    <span class="d-inline custom-small-text">Move Like A </span>
+                    <span class="d-inline"><b> Executive</b></span>
+                  </div>
+                </div>
+                <div class="card-content text-center">
+                <div fxLayout="column">
+                  <div fxFlex>
+                    <div class="custom-lt">
+                      <h5 class="black-text"><b>$5000</b></h5>
+                    </div>
+                  </div>
+                  <div fxFlex>
+                    <h4 class="mt-3 d-inline">
+                      <span class="blue-text text-darken-4">$ 2500</span>
+                    </h4>
+                    <h6 class="mt-3 d-inline">
+                      <span class="grey-text text-lighten-1">/Yr</span>
+                    </h6>
+                  </div>
+                  <div fxFlex class="my-4">
+                    <button style="background-color: #283593 ;color:white;border-radius:12px 0px;font-family:HelveticaNeue-Medium" class=" waves-effect btn" type="submit" name="action" [routerLink]="['/payment']"  class=" waves-effect btn" type="submit" name="action" [routerLink]="['/payment']" [queryParams]="{ sub:2500 }">
+                      Sign up now
+                    </button>
+                  </div>
+                  <div fxFlex class="mt-2 text-left">
+                    <ul class="custom-subs-list">
+                      <li>Unique code to download App before launch</li>
+                      <li>Upto <b>15%</b> discounts on all lifts</li>
+                      <li><b>Seat flexibility</b></li>
+                      <li>Upto <b>5%</b> discounts on all chartered flights</li>
+                      <li>Upto <b>10%</b> discount</li>
+                      <li>VIP pick-ups and drop-offs</li>
+                      <li>Upto 2 lift cruises a year</li>
+                      <li >Access to <i>selected</i> VetiFly events & partner deals</li>
+                      <li class="mt-4">2nd order preferential booking access during high-demand</li>
+                      <li class="grey-text">Dedicated relationship manager</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+            <div fxFlex="calc(33% - 30px)" fxFlex.lt-md="100" class="mb-3">
+              <div class="card mb-5" 
+              >
+                <div class="card-content indigo darken-3 white-text">
+                  <div class="card-title text-center">
+                    <span class="d-inline custom-small-text">Move Like A </span>
+                    <span class="d-inline"><b class="yellow-text text-darken-3"> President</b></span>
+                  </div>
+                </div>
+                <div class="card-content text-center">
+                  <div fxLayout="column">
+                    <div fxFlex>
+                      <div class="custom-lt">
+                        <h5 class="black-text"><b>$10000</b></h5>
+                      </div>
+                    </div>
+                    <div fxFlex>
+                      <h4 class="mt-3 d-inline">
+                        <span class="blue-text text-darken-4">$ 5000</span>
+                      </h4>
+                      <h6 class="mt-3 d-inline">
+                        <span class="grey-text text-lighten-1">/Yr</span>
+                      </h6>
+                    </div>
+                    <div fxFlex class="my-4">
+                      <button style="background-color:#283593;color:white;border-radius:12px 0px;font-family:HelveticaNeue-Medium" class=" waves-effect btn" type="submit" name="action" [routerLink]="['/payment']" [queryParams]="{ sub:5000 }">
+                        Sign up now
+                      </button>
+                    </div>
+                    <div fxFlex class="mt-2 text-left">
+                      <ul class="custom-subs-list">
+                        <li>Unique code to download App before launch</li>
+                        <li>Upto <b>20%</b> discounts on all lifts</li>
+                        <li><b>Seat flexibility</b></li>
+                        <li>Upto <b >15%</b> discounts on all chartered flights</li>
+                        <li>Upto <b >10%</b> discount</li>
+                        <li>Free VIP pick-ups and drop-offs</li>
+                        <li>Upto <b >5</b> lift cruises a year</li>
+                        <li>VIP access to all VetiFly events & partner deals</li>
+                        <li class="mt-4"><b >1st</b> order preferential booking access during high-demand</li>
+                        <li class="mb-2">Dedicated relationship manager</li>
+                      
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--How it works-->
+  <div class="container">
+    <div class="content">
+      <div fxLayout="column">
+        <div fxFlex class="center-align">
+          <h4>How It Works</h4>
+        </div>
+        <div fxLayout="row wrap" fxLayoutGap="30px" fxLayoutAlign="center" class="mt-5 mb-3">
+          <div fxFlex="560px" fxFlexAlign="center" *ngFor='let item of videolist'>
+                <iframe width="560" height="315" [src]="getembedurl(item)" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--our purpose , promise etc-->
+  <div class="container">
+    <div class="content">
+      <div fxLayout="column" fxLayoutAlign="center">
+        <div fxFlex="calc(50% - 50px)" fxFlexAlign="center">
+          <p id="mobileimg">
+            <img src="./assets/images/mobile.png" />
+          </p>
+        </div>
+        <div fxFlex fxFlexAlign="center" class="mt-5 mb-3">
+          <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="30px" fxLayoutAlign="center">
+            <div fxFlex="calc(30% - 30px)" class="mb-3" fxFlexAlign="center">
+              <h4>Our purpose</h4>
+              <p>
+                We understand the value of connections. Meeting people when you want
+                to can be a daunting task especially when traffic gets in the way.
+              </p>
+              <p>
+                We are committed to helping people get to their destination fast, safe and in
+                style.
+              </p>
+            </div>
+            <div fxFlex="calc(30% - 30px)" class="mb-3" fxFlexAlign="center">
+              <h4>App description</h4>
+              <p>
+                We understand the value of connections. Meeting people when you want
+                to can be a daunting task especially when traffic gets in the way.
+              </p>
+              <p>
+                We are committed to helping people get to their destination fast, safe and in
+                style.
+              </p>
+            </div>
+            <div fxFlex="calc(30% - 30px)" class="mb-3" fxFlexAlign="center">
+              <h4>Our promise</h4>
+              <p>
+                We understand the value of connections. Meeting people when you want
+                to can be a daunting task especially when traffic gets in the way.
+              </p>
+              <p>
+                We are committed to helping people get to their destination fast, safe and in
+                style.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--App Features-->
+  <div class="container">
+    <div class="content">
+      <div fxLayout="column">
+        <div fxFlex class="center-align">
+          <h4>App Features</h4>
+        </div>
+        <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="30px" class="mt-5 mb-3">
+          <div fxFlex="calc(33% - 30px)" *ngFor="let n of [1,2,3,4,5,6]">
+            <div fxLayout="row" fxLayoutGap="20px">
+              <div fxFlex="130px">
+                <img src="./assets/images/bulb.PNG" style="margin-top: 3px" alt="bulb" />
+              </div>
+              <div fxFlex="calc(130px - 20px)">
+                <h6>Feature {{n}}</h6>
+                <p class="custom-fe-text">
+                  Consequat cras lacinia id semper risus in ultrices sed vulputate dolor morbi nunc enim euismod fames aenean quis sit et felis ut facilisisbulb
+                </p>
+              </div>
+            </div>
+          </div>
+          <!--Offset div's Dont remove-->
+          <div fxFlex="calc(33% - 30px)"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--The Team-->
+  <div class="container">
+    <div class="content">
+      <div fxLayout="column">
+        <div fxFlex class="center-align">
+          <h4>Our Team</h4>
+        </div>
+        <div fxFlex="" class="mt-5 mb-3">
+          <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="30px">
+            <div fxFlex="calc(25% - 30px)" fxFlex.lt-md="calc(50% - 30px)" class="max-w-mc" *ngFor="let n of [1,2,3,4]">
+              <div class="card">
+                <div class="card-image">
+                  <img src="./assets/images/Rectangle 2.{{n}}.png">
+                </div>
+                <div class="card-content">
+                  <span class="card-title">Name Surname</span>
+                  <p>Job Title</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--The Team-->
+  <div class="container">
+    <div class="content">
+      <div fxLayout="column">
+        <div fxFlex class="center-align">
+          <h4 style="font-family: HelveticaNeue-Medium;
+    color:#1f3a6d;">Get In Touch</h4>
+        </div>
+        <div fxFlex class="mt-5 mb-3">
+          <div fxLayout="row">
+            <div fxFlex>
+              <div class="card">
+                <div fxLayout="row" fxLayout.lt-md="column"  fxLayoutGap="30px">
+                  <div fxFlex="calc(70% - 30px)">
+                    <div fxLayout="column">
+                      <div fxFlex="">
+                        <div class="card-content">
+                          <h5>Send us a Message</h5>
+                        </div>
+                      </div>
+                      <div fxFlex="">
+                        <div fxLayout="column" class="card-content">
+                          <div fxFlex>
+                            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="30px">
+                              <div fxFlex="">
+                                <input type="text" id="Name" placeholder="Name" class="custom-input" />
+                              </div>
+                              <div fxFlex="" fxLayout.lt-md="column">
+                                <input type="text" id="Email" placeholder="Email" class="custom-input" />
+                              </div>
+                            </div>
+                          </div>
+                          <div fxFlex class="mt-3">
+                            <div fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="30px">
+                              <div fxFlex="">
+                                <input type="text" id="Phone" placeholder="Phone" class="custom-input" />
+                              </div>
+                              <div fxFlex="" fxLayout.lt-md="column">
+                                <input type="text" id="Company" placeholder="Company" class="custom-input" />
+                              </div>
+                            </div>
+                          </div>
+                          <div fxFlex="calc(100% + 10px)" style="width: calc(100% + 10px)">
+                            <div class="input-field">
+                              <textarea rows="6" type="text" id="Message" class="materialize-textarea custom-input"></textarea>
+                              <label for="Message" class="pl-2 active-label">Message</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div fxFlex="calc(30% - 30px)" class="custom-card-offset  white-text" style="background-color: #1f3a6d">
+                    <div fxLayout="column" class="ml-5">
+                      <div fxFlex>
+                        <div class="card-content">
+                          <h5>Contact Information</h5>
+                        </div>
+                      </div>
+                      <div fxFlex="" class="card-content">
+                        <div fxLayout="row" fxLayoutGap="20px">
+                          <div fxFlex="" fxFlexAlign="center" class="max-w-mc"><img src="./assets/images/phone.png" /></div>
+                          <div fxFlex="">
+                            <p>+234 1 6586 7839</p>
+                          </div>
+                        </div>
+                        <div fxLayout="row" fxLayoutGap="20px" class="mt-4">
+                          <div fxFlex="" fxFlexAlign="center" class="max-w-mc"><img src="./assets/images/envelope.png" /></div>
+                          <div fxFlex="">
+                            <p>contact@vetifly.com</p>
+                          </div>
+                        </div>
+                        <div fxLayout="row" fxLayoutGap="20px" class="mt-4">
+                          <div fxFlex="" class="max-w-mc"><img src="./assets/images/location.png" /></div>
+                          <div fxFlex="">
+                            <p>Lorem ipsum dolor sit amet, consectetur
+                              adipiscing elit. Massa ac netus sed
+                              consectetur egestas</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                
+                </div>
+                  
+              </div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <app-footer></app-footer> -->
+
+<style>
+#getstarted{
+  background-color: #1f3a6d;
+  color:white;
+  border-radius: 10px 0px;
+  line-height:50%;
+  height:40px;
+  font-family: HelveticaNeue-Medium;
+  border-color: white;
+
+}</style>

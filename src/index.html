@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      content="text/css; charset=UTF-8; X-Content-Type-Options=nosniff"
+      http-equiv="Content-Type"
+    />
+    <title>Vetifly</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" type="css" href="styles.6c1cd9c06ba7a7ebd0df.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <script>
+      $(window).scroll(function() {
+        var height = $(window).scrollTop();
+      });
+      $(document).ready(function() {
+        $("#join").click(function(event) {
+          document.getElementById("nav").style.backgroundColor = "#1f3a6d";
+          event.preventDefault();
+          $("html, body").animate({ scrollTop: 690 }, "slow");
+          return false;
+        });
+      });
+    </script>
+    <app-root></app-root>
+  </body>
+  <script src="//api.ravepay.co/flwv3-pug/getpaidx/api/flwpbf-inline.js"></script>
+
+  <!-- <script>
+    var nav = document.getElementById("nav");
+    window.onscroll = function() {
+      if (window.pageYOffset > 320) {
+        nav.classList.add("blue", "darken-4");
+      } else {
+        nav.classList.remove("blue", "darken-4");
+      }
+    };
+  </script> -->
+
+  <script>
+    var nav = document.getElementById("nav");
+    window.onscroll = function() {
+      if (window.pageYOffset > 320) {
+        nav.style.backgroundColor = "#1f3a6d";
+      } else {
+        nav.style.backgroundColor = "transparent";
+      }
+    };
+  </script>
+
+  <script>
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+    });
+    $(document).ready(function() {
+      $("#join").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 665 }, "slow");
+        return false;
+      });
+
+      $("#how").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 1311 }, "slow");
+        return false;
+      });
+
+      $("#about").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 2455 }, "slow");
+        return false;
+      });
+
+      $("#contact").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 3873 }, "slow");
+        return false;
+      });
+
+      $("#logo1").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+      });
+         $("#getstarted").click(function (event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 655 }, "slow");
+        return false;
+      });
+    
+    });
+      
+  </script>
+  <!-- <script>
+    scrollhow() {
+      event.preventDefault();
+    document.getElementById('howitworks').scrollIntoView({behaviour:smooth});
+    return false;
+  }
+    </script> -->
+</html>

@@ -1,0 +1,76 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./assets/materialize/css/materialize.min.css";
+@font-face {
+  font-family: HelveticaNeue-Medium;
+  src: url(./assets/fonts/HelveticaNeue-Medium.otf) format("opentype");
+}
+
+html,
+body {
+  font-family: "Libre Franklin", sans-serif;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#signuppage {
+  background-image: url("./assets/images/signupbg.PNG");
+}
+
+#loginpage {
+  background-image: url("./assets/images/signupbg.PNG");
+}
+.paymentbtn {
+  color: #ffff;
+  width: 250px;
+  height: 50px;
+  font-weight: 800;
+  background-color: #1f3a6d;
+}
+
+.container {
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 12%;
+}
+
+.content {
+  width: 100%;
+  padding: 40px 0;
+}
+
+@media screen and (max-width: 959px) {
+  .container {
+    margin: 0;
+    padding: 0 20px;
+  }
+}
+
+.color-white {
+  color: white;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100%;
+}
+
+.max-h-max-content {
+  max-height: max-content;
+}
+
+.max-h-max-content-nm {
+  max-height: max-content !important;
+}
+
+.max-w-mc {
+  max-width: max-content;
+}
+.materialize-textarea {
+  min-height: 100px !important;
+}
+.active-label.active {
+  display: none;
+}

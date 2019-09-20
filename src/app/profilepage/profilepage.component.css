@@ -1,0 +1,13 @@
+#mycard {
+  background-color: white;
+  border: 1px solid #1f3a6d;
+  margin: auto;
+  max-width: max-content;
+  padding: 20px;
+  width: 100%;
+}
+p {
+  color: #1f3a6d;
+
+  font-size: 20px;
+}

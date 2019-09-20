@@ -1,0 +1,23 @@
+.brand {
+  cursor: pointer;
+}
+
+.custom-input {
+  background-color: lightslategray !important;
+  padding: 0 10px !important;
+  border-radius: 2px !important;
+}
+
+.login-wrap {
+  max-height: max-content;
+  min-width: 40%;
+}
+
+.custom-su-btn {
+  border: 1px solid #ddd;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(17, 16, 16, 0.747); /*Change the placeholder color*/
+  opacity: 1; /*Change the opacity between 0 and 1*/
+}

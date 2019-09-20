@@ -1,0 +1,36 @@
+nav {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+}
+
+#join {
+  margin-left: 40px;
+}
+.brand-wrap {
+  line-height: 0 !important;
+}
+.brand {
+  margin-left: 20px;
+  margin-top: -5px;
+  cursor: pointer;
+  height: 100%;
+  width: 135px;
+}
+
+.signup-button {
+  background-color: white;
+  color: #1f3a6d;
+  font-family: HelveticaNeue-Medium;
+
+  text-transform: unset;
+  text-align: center;
+  border: #1f3a6d 1px solid;
+  line-height: 170%;
+  width: 95px;
+  border-radius: 12px 0px;
+}

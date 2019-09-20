@@ -1,0 +1,40 @@
+<div>
+  <nav id="nav-link">
+    <ul id="myul" class="container">
+      <li class="brand-wrap">
+        <img
+          href="#"
+          [routerLink]="['/']"
+          id="logo1"
+          class="brand"
+          src="./assets/images/mainlogo.png"
+        />
+      </li>
+      <li class="hide-on-med-and-down">
+        <a [routerLink]="['/']" (click)="scrolljoin()" id="join"
+          >Join the Vetifly Club</a
+        >
+      </li>
+      <li class="hide-on-med-and-down">
+        <a [routerLink]="['/']" (click)="scrollhow()" id="how">How it works</a>
+      </li>
+      <li class="hide-on-med-and-down">
+        <a [routerLink]="['/']" (click)="scrollabout()" id="about">About</a>
+      </li>
+      <li class="hide-on-med-and-down">
+        <a [routerLink]="['/']" (click)="scrollcontact()" id="contact"
+          >Contact</a
+        >
+      </li>
+      <li class="right">
+        <a
+          id="signup1"
+          [routerLink]="['/payment']"
+          class="signup-button waves-effect waves-light btn"
+          >Sign Up</a
+        >
+      </li>
+      <li class="right"><a id="login1" [routerLink]="['/login']">Log In</a></li>
+    </ul>
+  </nav>
+</div>

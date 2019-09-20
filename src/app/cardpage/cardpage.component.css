@@ -1,0 +1,64 @@
+.brand {
+  cursor: pointer;
+  height: 100px;
+}
+
+.custom-input {
+  background-color: lightslategray !important;
+  padding: 0 10px !important;
+  border-radius: 2px !important;
+  max-width: max-content;
+  min-width: calc(100% - 20px);
+}
+
+.login-wrap {
+  max-height: max-content;
+  min-width: 40%;
+}
+
+.custom-su-btn {
+  border: 1px solid #ddd;
+}
+
+input::-webkit-input-placeholder {
+  color: rgba(17, 16, 16, 0.747); /*Change the placeholder color*/
+  opacity: 1; /*Change the opacity between 0 and 1*/
+}
+
+.custom-button {
+  height: 53px;
+  line-height: 27px;
+  text-transform: unset;
+  font-size: 14px;
+  color: #3362ba;
+  background-color: #f2f2f2;
+}
+
+div.btn:active {
+  background-color: #4dd0e1;
+}
+
+.mylink {
+  color: #3362ba;
+  font-size: 13px;
+}
+
+.content {
+  margin-top: 65px;
+}
+
+.custom-label {
+  color: #3362ba;
+  line-height: 23px;
+  font-size: 13px;
+}
+
+.submit-button {
+  border-radius: 50px;
+}
+
+@media screen and (max-width: 959px) {
+  .container {
+    overflow: auto;
+  }
+}

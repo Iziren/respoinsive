@@ -1,0 +1,727 @@
+<div class="container full-width full-height">
+  <div class="content full-width full-height">
+    <div fxLayout="column" class="full-width full-height">
+      <div fxFlex fxFlexAlign="center" class="full-width valign-wrapper">
+          <div class="card custom-card full-width">
+            <div class="card-content" >
+              <div fxLayout="column">
+                <div fxFlex>
+                  <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutGap="30px" fxLayoutAlign="center">
+                    <div fxFlex="calc(100% - 495px)" fxFlexAlign="center" class="full-width">
+                      <div fxLayout="column" class="text-center">
+                        <div fxFlex><img id="logo2" class="brand" src="./assets/images/paymentlogo.PNG" href="#" /></div>
+                        <div fxFlex class="mt-4">
+                          <input type="text" id="fullname" placeholder="FullName" name="fullname" class="custom-input" />
+                        </div>
+                        <div fxFlex class="mt-2">
+                          <input type="text" id="mobilenumber" placeholder="Mobile Number" name="mobilenumber" class="custom-input" />
+                        </div>
+                        <div fxFlex class="mt-2">
+                          <input type="text" id="email" placeholder="Email" required name="email" class="custom-input" />
+                        </div>
+                        <div fxFlex class="mt-2">
+                          <input required type="text" id="confirmemail" placeholder="Password" name="password" class="custom-input" />
+                        </div>
+                      </div>
+                    </div>
+                    <div fxFlex="calc(465px - 30px)">
+                      <div fxLayout="column">
+                        <div fxFlex>
+                          <h3 class="mt-3 pt-4">Choose Subscription</h3>
+                        </div>
+                        <div fxFlex class="mt-5 mb-3">
+                          <div fxLayout="row" fxLayoutGap="20px">
+                            <div fxFlex="calc(33% - 20px)">
+                              <a id="button1" class="btn custom-button" (click)="Boss1($event)"><b>Boss</b> <br /> $1500/yr</a>
+                            </div>
+                            <div fxFlex="calc(33% - 20px)">
+                              <a id="button2" class="btn custom-button" (click)="Executive1($event)"><b>Executive</b> <br /> $2500/yr</a>
+                            </div>
+                            <div fxFlex="calc(33% - 20px)">
+                              <a id="button3" class="btn custom-button" (click)="President1($event)"><b>President</b> <br /> $5000/yr</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div fxFlex class="text-right mb-3">
+                          <a id="mylink" class="mylink" onclick="document.getElementById('id01').style.display='block'">
+                            <u>*I do not want to pay</u>
+                          </a>
+                        </div>
+                        <div fxFlex class="mb-3">
+                          <div fxLayout="row" fxLayoutGap="20px">
+                            <div fxFlex="30px">
+                              <div class="switch">
+                                <label>
+                                  <input type="checkbox" (click)="function5($event)" />
+                                  <span class="lever m-0"></span>
+                                </label>
+                              </div>
+                            </div>
+                            <div fxFlex="calc(100% - 50px)" class="max-w-mc custom-label">
+                              Change my currency to Naira
+                            </div>
+                          </div>
+                        </div>
+                        <div fxFlex class="mb-3">
+                          <input style="height: 37px;opacity: 0.5;border-radius: 1px;background-color: #c4c4c4; text-align: center"
+                                 type="text"
+                                 id="referal"
+                                 onfocus="this.value=''"
+                                 value="*Add a Referal Code*"
+                                 placeholder="Add a Referal Code"
+                          />
+                        </div>
+                        <div fxFlex>
+                          <div fxLayout="row" fxLayoutGap="5px">
+                            <div fxFlex class="max-w-mc">
+                              <input type="checkbox" class="d-inline"/>
+                              <span class="checkmark"></span>
+                            </div>
+                            <div fxFlex class="max-w-mc">
+                              <label id="sentence d-inline">
+                                I agree to the
+                                <a style="color:#1f3a6d" href="#"><u>terms and conditions</u></a> and
+                                <a style="color:#1f3a6d ; cursor: pointer;" [routerLink]="['/privacy']">
+                                  <u>privacy policy</u>
+                                </a>
+                              </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div fxFlex class="text-right">
+                  <button class="btn waves-effect blue darken-4 waves-light submit-button mt-3" type="submit" name="action">
+                    Sign Up
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+<!-- ******************* modal ******************** -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<div class="w3-container ">
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content mt-5 pt-4"style="background-color: white;">
+      <div class="w3-container position-relative">
+        <!-- ********* reappearing content *********** -->
+       
+              <!-- *********************** -->
+               <!-- <span style="position: absolute;right: 0;margin-top: 0;"
+                 onclick="document.getElementById('id01').style.display='none'"
+                 class="w3-button "
+               >&times;</span> -->
+              
+        <p id="disappear1"
+          style="color: #1f3a6d ;
+                  font-size: 21px;    font-weight: 600"
+        >
+          Subscription
+        </p>
+          <div
+                id="reappearing"
+                style="margin-left: 20px; margin-top:20px ; color: blue"
+              >
+                <span *ngIf="buttonclicked5" id="sentence"
+                  ><label id="mysentence"
+                    style="color:#1f3a6d ; margin-left: 100px ; color: #1f3a6d;font-size: 20px;"
+                    >{{ sentence }}</label
+                  >
+                </span>
+              </div>
+        <p id="disappear2"
+          style="color: #1f3a6d ; line-height: 21px;
+                  font-size: 16px;"
+        >
+         
+          We are currently only accepting subscribers with sign-ups.
+          <br />Please enter your email below if you would like us to notify
+          you as soon as the service opens up.
+           
+        </p>
+
+        <div id="disappear3" style="margin-top: 15px">
+         
+          <input
+            style="opacity: 0.5 ; font-family: Helvetica; width: 348px;height: 37px ;   background-color: #c4c4c4;
+                     margin-left: 1px;"
+            type="text"
+            id="fullname1"
+            value=" Full Name"
+          />
+          <br />
+          <input class="mb-5"
+            style="opacity: 0.5 ;    background-color: #c4c4c4 ;margin-top:4px; width: 348px;height: 37px ;
+                     margin-left: 1px;"
+            type="text"
+            id="email1"
+            value=" Email"
+          />
+        </div>
+      </div>
+    
+      <div
+        class="w3-container full-width"
+        style="background-color:#1f3a6d;
+            height: 50px;"
+      >
+        <div>
+          <a class="float-right"
+            style="color: white ;
+                  font-size: 14px;
+                  margin-top: 15px;"
+         id="cancel"
+             onclick="document.getElementById('id01').style.display='none'"
+          ><u>CANCEL</u></a
+          >
+          <a  id="subscribe"  class="mr-2 float-right"
+           (click)="d()"
+         
+             style="color: white ;font-size: 14px;
+                  margin-top: 15px; letter-spacing: 0.7px
+                  "
+            
+          ><u>SUBSCRIBE</u></a
+          >
+           <div>
+              <span *ngIf="buttonclicked5" id="sentence"
+                ><a
+                  style="color:#1f3a6d;background-color:white;font-family:HelveticaNeue-Medium;margin-left: 400px;
+    width: 100px;
+    margin-top: 7px;
+    border-radius: 12px 0px"
+                  href="#"
+                  class="waves-effect waves-light btn"
+                  >OK</a
+                >
+              </span>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- <form #usersForm="ngForm" (ngSubmit)="onSubmit(usersForm)">
+  <input
+    type="hidden"
+    name="_id"
+    #_id="ngModel"
+    [(ngModel)]="usersService.selectedUsers._id"
+  /> -->
+
+<!-- <div>
+
+
+  <div class="container" style="position: absolute;    margin-left: -90px;">
+    <div
+      class="card"
+      style="background-color:white; width:983px; height:450px ; margin-top:70px ; margin-left: 260px"
+    >
+      <div class="vl"></div>
+
+      <p
+        style="margin-left:479px ; margin-top:88px ; color:#1f3a6d; font-weight:600; position:absolute; font-size:15px; font-family:Helvetica"
+      >
+        Choose Subscription
+      </p>
+
+      <div style="position:absolute; margin-left: 475px ; margin-top:130px;">
+        <a
+          id="button1"
+          class="btn"
+          (click)="Boss1($event)"
+          style="width: 151px;
+  height: 53px; line-height: 20px ;text-transform: unset; font-size: 14px; color:#1f3a6d ;background-color: #f2f2f2"
+          ><b>Boss</b> <br />
+          $1500/yr</a
+        >
+        <a
+          id="button2"
+          (click)="Executive1($event)"
+          class="btn"
+          style=" width: 151px;
+  height: 53px; line-height: 20px ; font-size: 14px;background-color: #f2f2f2 ;color:#1f3a6d ; text-transform: unset;    margin-left: 15px; "
+          ><b>Executive</b> $2500/yr</a
+        >
+        <a
+          id="button3"
+          class=" btn "
+          (click)="President1($event)"
+          style=" width: 151px;
+  height: 53px; line-height: 20px; background-color: #f2f2f2 ; font-size: 14px;text-transform: unset;color:#1f3a6d ;     margin-left: 15px; "
+          ><b>President</b> $5000/yr</a
+        >
+      </div>
+      <style>
+        div.btn:active {
+          background-color: #4dd0e1;
+        }
+      </style>
+
+   
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+      <div class="w3-container">
+        <a
+          id="mylink"
+          style="position:absolute; color: #1f3a6d;margin-left: 809px ;font-size: 13px;font-family: Helvetica ;margin-top:185px"
+          onclick="document.getElementById('id01').style.display='block'"
+        >
+          <u>*I do not want to pay</u>
+        </a>
+
+        <div id="id01" class="w3-modal">
+          <div
+            class="w3-modal-content"
+            style="background-color: white; height: 250px; border-top-left-radius: 25px;
+    border-top-right-radius: 25px;"
+          >
+            <div class="w3-container">
+            
+              <div
+                id="reappearing"
+                style="margin-left: 20px; margin-top:20px;position:absolute ; color: blue"
+              >
+                <span *ngIf="buttonclicked5" id="sentence"
+                  ><label
+                    style="color:#1f3a6d ; margin-top: 80px;margin-left: 100px ; color: #1f3a6d;font-size: 20px;"
+                    >{{ sentence }}</label
+                  >
+                </span>
+              </div>
+   
+              <div id="makethisdisappear">
+                <p
+                  style="color: #1f3a6d ;
+    font-size: 21px;  margin-top: 20px ; font-weight: 600"
+                >
+                  Subscription
+                </p>
+                <p
+                  style="color: #1f3a6d ; line-height: 21px;
+
+    font-size: 16px;"
+                >
+             
+                  We are currently only accepting subscribers with sign-ups.
+                  <br />Please enter your email below if you would like us to
+                  notify you as soon as the service opens up.
+                </p>
+                <div style="margin-top: 15px">
+                  <input
+                    style="opacity: 0.5 ; font-family: Helvetica; width: 348px;height: 37px ;   background-color: #c4c4c4;
+                  margin-left: 1px;"
+                    type="text"
+                    id="fullname1"
+                    value=" Full Name"
+                  />
+                  <br />
+                  <input
+                    style="opacity: 0.5 ;    background-color: #c4c4c4 ;margin-top:4px; width: 348px;height: 37px ; 
+                  margin-left: 1px;"
+                    type="text"
+                    id="email1"
+                    value=" Email"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <footer
+            class="w3-container"
+            style="background-color:#1f3a6d;     width: 900px; border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    margin-left: 233px;
+    height: 50px;"
+          >
+            <div>
+              <a
+                id="subscribe"
+                style="color: white ;font-size: 14px;
+    font-family: Helvetica;
+   
+    margin-top: 15px;
+    position: absolute;
+    margin-left: 655px; letter-spacing: 0.7px
+"
+                (click)="d()"
+                >SUBSCRIBE</a
+              >
+              <a
+                id="cancel"
+                style="color: white ; 
+    margin-left: 780px;
+    font-family: Helvetica;
+    font-size: 14px;
+    margin-top: 15px;
+    position: absolute;"
+                onclick="document.getElementById('id01').style.display='none'"
+                >CANCEL</a
+              >
+            </div>
+            <div>
+              <span *ngIf="buttonclicked5" id="sentence"
+                ><a
+                  style="color:#1f3a6d;background-color:white;font-family:HelveticaNeue-Medium;margin-left: 400px;
+    width: 100px;
+    margin-top: 7px;
+    border-radius: 12px 0px"
+                  href="#"
+                  class="waves-effect waves-light btn"
+                  >OK</a
+                >
+              </span>
+            </div>
+          </footer>
+        </div>
+      </div>
+     
+      <div
+        style="position:absolute ; margin-top: 270px ;width: 298px;
+    ; margin-left: 477px ;"
+      >
+        <input
+          style="width: 348px;
+    height: 37px;
+    opacity: 0.5;
+    border-radius: 1px;
+    background-color: #c4c4c4; text-align: center"
+          type="text"
+          id="referal"
+          onfocus="this.value=''"
+          value="*Add a Referal Code*"
+          placeholder="Add a Referal Code"
+        />
+      </div>
+      
+
+      <div
+        style="position: absolute;margin-top:217px;margin-left:460px"
+        class="switch"
+      >
+        <label>
+          <input type="checkbox" (click)="function5($event)" />
+          <span class="lever"></span>
+        </label>
+      </div>
+      <div
+        id="sentenceA"
+        style=" font-family: HelveticaNeue-Medium;
+     ;position: absolute ; color: #1f3a6d; margin-top:222px ;font-size: 11px ;margin-left:521px"
+      >
+        Change my currency to Naira
+      </div> -->
+
+      <!-- ********************************************************************* -->
+      <!-- ************ checkbox and privacy policy ****************** -->
+      <!-- <div style="  font-size:12px ; color: rgba(0, 0, 0, 0.7)">
+        <label>
+          <input
+            type="checkbox"
+            style="position:absolute ; margin-top: 338px ; margin-left: 482px ; "
+          />
+          <span
+            class="checkmark"
+            style="position:absolute ; margin-top: 338px ; margin-left: 482px ; "
+          ></span>
+          <label
+            id="sentence"
+            style="position: absolute; margin-top:343px; margin-left:509px"
+          >
+            I agree to the
+            <a style="color:#1f3a6d" href="#"><u>terms and conditions</u></a>
+            and
+            <a
+              style="color:#1f3a6d ; cursor: pointer;"
+              [routerLink]="['/privacy']"
+              ><u>privacy policy</u></a
+            >
+          </label>
+        </label>
+      </div> -->
+      <!-- *****************************Payment Button************************************* -->
+
+      <!-- <p>
+        <img
+          src="./assets/images/paymentlogo.PNG"
+          style="margin-top:86px ; margin-left:157px"
+        />
+      </p>
+      <div> -->
+        <!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm)" ngNativeValidate> -->
+        <!-- <input type="text" id="fullname" placeholder="FullName" name="fullname" ngModel required> -->
+  
+        <!-- #name="name"
+        #name="ngModel"
+        [(ngModel)]="usersService.selectedUsers.name"
+      /> -->
+
+      
+        <!-- <input type="text" id="mobilenumber" placeholder="Mobile Number" name="mobilenumber" ngModel required > -->
+   
+        <!-- #name="phone"
+        #name="ngModel"
+        [(ngModel)]="usersService.selectedUsers.phone"
+      /> -->
+    
+        <!-- <input
+      type="text"
+      id="email"
+      placeholder="Email"
+      required
+      name="email" ngModel> -->
+    
+        <!-- #name="email" -->
+
+        <!-- #name="ngModel"
+        [(ngModel)]="usersService.selectedUsers.email"
+      /> -->
+        
+        <!-- <input required type="text" id="confirmemail" placeholder="Password" name="password" ngModel> -->
+       
+
+
+
+          <!-- **************  BACK END PART ************** -->
+          <!-- <rave-pay-button 
+      [text]="this.amount"
+      [currency]="this.currency"
+      [className]="'paymentbtn'"
+      (callback)="confirmPayment($event)"
+      (close)="cancelledPayment()"
+      [key]="'FLWPUBK_TEST-d7913f23e58b2c7d44f031fcc2422901-X'"
+      [reference]="'testref'"
+      [redirect_url]="'profile'"
+      [amount]="this.amount"
+      [email]="'payment@vetifly.com'"
+      [custom_title]="this.subname"
+      
+        >{{this.amount}}</rave-pay-button >  -->
+
+          <!-- <button style= "background-color: #1f3a6d" angular-rave [PBFPubKey]="'FLWPUBK_TEST-d7913f23e58b2c7d44f031fcc2422901-X'"
+        [customer_email]="'payment@vetifly.com'"
+        [amount]="this.amount"
+        [custom_title]="this.subname"
+        [txref]="'xxbbvvggvcfs123'"
+        [currency]="'USD'"
+        [redirect_url]="'www.vetifly.com'"
+        
+        
+        class="btn btn-info" >Proceed to Pay {{this.amount}}
+        
+        </button> -->
+        <!-- </p> -->
+
+        <!-- </form> -->
+        <!-- </div> -->
+      <!-- </div>
+    </div> -->
+    <!-- </form> -->
+
+    <!-- ********************** BACK END PART   END*************** -->
+
+    <!-- ********* css *********** -->
+
+    <!-- <style>
+      fake-input {
+        position: relative;
+        width: 240px;
+      }
+      .fake-input input {
+        border: none;
+        background-color: #fff;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .fake-input img {
+        position: absolute;
+        top: 2px;
+        right: 5px;
+      }
+
+      .vl {
+        height: 360px;
+        position: absolute;
+        left: 50%;
+        margin-left: -61px;
+        top: 0;
+        border-left: 1.5px solid #1f3a6d;
+        margin-top: 40px;
+      }
+      #fullname {
+        width: 348px;
+        height: 37px;
+        opacity: 0.5;
+        border-radius: 1px;
+        background-color: #c4c4c4;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: 2px;
+      }
+      #join {
+        margin-top: 9px;
+        margin-left: 40px;
+      }
+      #about {
+        margin-top: 9px;
+      }
+      #contact {
+        margin-top: 9px;
+      }
+      #login1 {
+        margin-left: 450px;
+        margin-top: 9px;
+      }
+
+      #how {
+        margin-top: 9px;
+      }
+
+      #logo1 {
+        margin-left: 20px;
+        margin-top: -5px;
+        cursor: pointer;
+      }
+
+      #mobilenumber {
+        width: 348px;
+        height: 37px;
+        opacity: 0.5;
+        border-radius: 1px;
+        background-color: #c4c4c4;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: 27px;
+      }
+
+      #email {
+        width: 348px;
+        height: 37px;
+        opacity: 0.5;
+        border-radius: 1px;
+        background-color: #c4c4c4;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: 51px;
+      }
+
+      #confirmemail {
+        width: 348px;
+        height: 37px;
+        opacity: 0.5;
+        border-radius: 1px;
+        background-color: #c4c4c4;
+        margin-left: 35px;
+        position: absolute;
+        margin-top: 75px;
+      }
+      [type="radio"]:checked + span:after,
+      [type="radio"].with-gap:checked + span:after {
+        background-color: #1f3a6d;
+      }
+      [type="radio"]:checked + span:after,
+      [type="radio"].with-gap:checked + span:before,
+      [type="radio"].with-gap:checked + span:after {
+        border: 0.5px solid mediumpurple;
+      }
+
+      #link2 {
+        cursor: pointer;
+      }
+
+      .w3-button {
+        color: #1f3a6d !important;
+        background-color: white !important;
+        position: absolute;
+        margin-left: 772px;
+        color: #1f3a6d;
+        margin-top: 131px;
+      }
+      .w3-button[_ngcontent-pvc-c1] {
+        color: #1f3a6d !important;
+        background-color: white !important;
+        position: absolute;
+        margin-left: 840px;
+        margin-top: 0px;
+      }
+      #mynav {
+        height: 80px;
+        position: sticky;
+        background: #1f3a6d;
+        top: 0;
+        transition: 0.5s;
+      }
+
+      #mylink:hover {
+        background-color: white;
+        cursor: pointer;
+      }
+      .switch label input[type="checkbox"]:checked + .lever:after {
+        background-color: #1f3a6d;
+      }
+      .switch label input[type="checkbox"]:checked + .lever {
+        background-color: #c4c4c4;
+      }
+      [type="checkbox"]:checked + span:not(.lever):before {
+        border-right: 2px solid #1f3a6d;
+        border-bottom: 2px solid #1f3a6d;
+      }
+      input::-webkit-input-placeholder {
+        color: rgb(53, 51, 51); /*Change the placeholder color*/
+        opacity: 1; /*Change the opacity between 0 and 1*/
+      }
+
+      #join {
+        margin-top: 9px;
+        margin-left: 40px;
+      }
+      #about {
+        margin-top: 9px;
+      }
+      #contact {
+        margin-top: 9px;
+      }
+      #login1 {
+        margin-left: 450px;
+        margin-top: 9px;
+      }
+      #mynavy {
+        height: 80px;
+        position: sticky;
+        background-color: #1f3a6d;
+        top: 0;
+
+        width: 1349px;
+      }
+
+      #how {
+        margin-top: 9px;
+      }
+
+      #logo1 {
+        margin-left: 20px;
+        margin-top: -5px;
+        cursor: pointer;
+      }
+    </style> -->
+
+  <!-- </div>
+</div> -->
